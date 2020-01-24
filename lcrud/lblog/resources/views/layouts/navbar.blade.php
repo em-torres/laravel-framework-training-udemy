@@ -16,12 +16,12 @@
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home
+                <a class="nav-link" href="{{ url('/') }}">Home
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Add New</a>
+                <a class="nav-link" href="{{ url('/student/create') }}">Add New</a>
             </li>
         </ul>
         <!-- Links -->

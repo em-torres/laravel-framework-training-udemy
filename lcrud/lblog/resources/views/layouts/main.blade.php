@@ -20,7 +20,11 @@
 
     <!-- Start your project here-->
     @include('layouts.navbar')
-    @yield('content')
+    <div class="container">
+        <br>
+        @yield('content')
+        <br>
+    </div>
     @include('layouts.footer')
     <!-- Start your project here-->
 

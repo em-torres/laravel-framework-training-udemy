@@ -11,13 +11,14 @@
 |
 */
 
+Route::get('/', 'StudentController@index')->name('student_home');
+Route::get('/student/create', 'StudentController@create')->name('student_create');
+
 Route::get('test', 'TestController@index');
-Route::get('/', 'StudentController@index');
 
 Route::get('/hello', function () {
     return 'Hello World';
 });
-
 Route::get('/user/{id}', function ($id) {
     return 'Your id is ' . $id;
 });
