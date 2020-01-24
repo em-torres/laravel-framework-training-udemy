@@ -13,6 +13,7 @@
 
 Route::get('/', 'StudentController@index')->name('student_home');
 Route::get('/student/create', 'StudentController@create')->name('student_create');
+Route::post('/student/create', 'StudentController@store')->name('student_store');
 
 Route::get('test', 'TestController@index');
 
