@@ -7,7 +7,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Material Design Bootstrap</title>
         <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link href="{{ asset('resources/css/fontawesome_v5.8.2.css') }}" rel="stylesheet">
         <!-- Bootstrap core CSS -->
         <link href="{{ asset('resources/css/bootstrap.min.css') }}" rel="stylesheet">
         <!-- Material Design Bootstrap -->
