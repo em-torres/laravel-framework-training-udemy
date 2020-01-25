@@ -10,7 +10,7 @@
     <br>
     <table class="table">
         <thead class="black white-text">
-        <tr>
+        <tr class="text-center">
             <th scope="col">ID</th>
             <th scope="col">First Name</th>
             <th scope="col">Last Name</th>
@@ -27,7 +27,10 @@
                     <td>{{ $student->last_name }}</td>
                     <td>{{ $student->email }}</td>
                     <td>{{ $student->phone }}</td>
-                    <td>Edit || Delete</td>
+                    <td>
+                        <a href="{{ route('student_edit', $student->id) }}" class="btn btn-raised btn-sm btn-primary">Edit <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a> ||
+                        <a href="{{ route('student_delete', $student->id) }}" class="btn btn-raised btn-sm btn-danger">Delete <i class="fa fa-trash" aria-hidden="true"></i></a>
+                    </td>
                 </tr>
             @endforeach
         </tbody>

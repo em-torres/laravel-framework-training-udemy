@@ -13,9 +13,13 @@
 
 Route::get('/', 'StudentController@index')->name('student_home');
 Route::get('/student/create', 'StudentController@create')->name('student_create');
-Route::post('/student/create', 'StudentController@store')->name('student_store');
-
+Route::get('/student/edit/{id}', 'StudentController@edit')->name('student_edit');
+Route::get('/student/delete/{id}', 'StudentController@delete')->name('student_delete');
 Route::get('test', 'TestController@index');
+
+Route::post('/student/create', 'StudentController@store')->name('student_store');
+Route::post('/student/update/{id}', 'StudentController@update')->name('student_update');
+
 
 Route::get('/hello', function () {
     return 'Hello World';

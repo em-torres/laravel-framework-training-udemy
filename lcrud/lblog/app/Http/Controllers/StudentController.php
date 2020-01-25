@@ -39,4 +39,16 @@ class StudentController extends Controller
 
         return redirect(route('student_home'))->with($args);
     }
+
+    public function edit(Request $request) {
+        return;
+    }
+
+    public function update(Request $request) {
+        return;
+    }
+
+    public function delete(Request $request) {
+        return;
+    }
 }
