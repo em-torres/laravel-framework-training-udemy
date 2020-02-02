@@ -78,6 +78,18 @@
         </nav>
 
         <main class="py-4">
+            <div class="container">
+                @if(session('errorMsg'))
+                    <div class="alert alert-danger" role="alert">
+                        {{ session('errorMsg') }}
+                    </div>
+                @endif
+                @if(session('successMsg'))
+                    <div class="alert alert-success" role="alert">
+                        {{ session('successMsg') }}
+                    </div>
+                @endif
+            </div>
             @yield('content')
         </main>
     </div>
