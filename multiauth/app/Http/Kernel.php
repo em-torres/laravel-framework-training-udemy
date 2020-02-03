@@ -5,6 +5,7 @@ namespace App\Http;
 use App\Http\Middleware\AdminMiddleware;
 use App\Http\Middleware\Authenticate;
 use App\Http\Middleware\AuthorMiddleware;
+use App\Http\Middleware\CheckAge;
 use App\Http\Middleware\CheckForMaintenanceMode;
 use App\Http\Middleware\EncryptCookies;
 use App\Http\Middleware\RedirectIfAuthenticated;
@@ -86,6 +87,7 @@ class Kernel extends HttpKernel
         'verified' => EnsureEmailIsVerified::class,
         'admin' => AdminMiddleware::class,
         'author' => AuthorMiddleware::class,
+        'age' => CheckAge::class,
     ];
 
     /**
